@@ -6,13 +6,20 @@ const routes = [
     redirect: '/Home',
   },
   {
-    path: '/home',
-    name: 'Home',
+    path: '/',
+    name: '',
     component: () =>
-      import(/* webpackChunkName: "Home" */ '@/views/home/index.vue'),
+      import(/* webpackChunkName: "layout" */ '@/components/layout.vue'),
     meta: {
       title: '首页',
     },
+    children: [{
+      //默认 显示home组件
+      path: "home",
+      name: "Home",
+      component: () =>
+        import(/* webpackChunkName: "Home" */ '@/views/home/index.vue'),
+    }],
   },
 ];
 

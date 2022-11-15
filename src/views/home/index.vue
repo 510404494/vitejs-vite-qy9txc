@@ -1,1 +1,7 @@
-<template><div>123123123</div></template>
+<template>
+  <van-row justify="center">
+    <van-col span="6">span: 6</van-col>
+    <van-col span="6">span: 6</van-col>
+    <van-col span="6">span: 6</van-col>
+  </van-row>
+</template>
