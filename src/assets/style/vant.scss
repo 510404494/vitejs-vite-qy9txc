@@ -1,0 +1,90 @@
+@import "variable";
+@import "theme";
+//顶部导航栏最大宽度限制
+.van-nav-bar--fixed {
+  z-index: 2 !important;
+}
+
+//tabs粘性布局
+.van-tabs__wrap {
+  position: sticky;
+  top: 1.067rem;
+  z-index: 2;
+  position: -webkit-sticky;
+  border-bottom: 1px solid $color-border-base;
+}
+
+//导航栏最大宽度限制
+.van-nav-bar__title {
+  max-width: 85% !important;
+}
+
+//搜索框宽度设置
+.van-search {
+  padding: 0 !important;
+  width: 70vw !important;
+}
+
+//导航栏左侧图标颜色和大小
+.van-nav-bar .van-icon {
+  @include font_color('font_color1');
+  font-size: 25px !important;
+}
+
+//评论输入框右侧图标尺寸
+.van-field__right-icon {
+  .van-icon__image {
+    transform: scale(3) translate(-0.053rem);
+  }
+}
+
+//弹窗遮罩超出部分正常显示
+.van-popup {
+  overflow: visible;
+  border-radius: 0.133rem;
+}
+
+// 页面动画切换后，导航栏高度顶部问题适配
+.van-nav-bar__placeholder {
+  height: 1.2rem !important;
+}
+
+// 页面动画切换后，导航栏高度底部问题适配
+.van-tabbar__placeholder {
+  height: 1.2rem !important;
+}
+
+// 弹出层关闭按钮层级
+.van-popup__close-icon {
+  z-index: 2 !important;
+}
+
+// 底部tab层级
+.van-tabbar {
+  z-index: 2 !important;
+}
+
+// 步骤条暗黑模式适配
+.van-step--horizontal .van-step__circle-container {
+  @include background_color('background_color2')
+}
+
+// 分享菜单适配暗黑模式
+.van-share-sheet__cancel::before {
+  @include background_color('background_color4')
+}
+
+// 弹窗菜单适配暗黑模式
+.van-popup .van-tabs__wrap .van-tabs__nav {
+  background-color: transparent !important;
+}
+
+// 重置密码进度条表单提示
+.van-steps {
+  background-color: transparent !important;
+}
+
+// 评论输入框宽度
+.van-field__control {
+  width: 80% !important;
+}

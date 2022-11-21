@@ -1,0 +1,23 @@
+:root {
+  --van-button-primary-background-color: linear-gradient(
+    270deg,
+    #56b2f7 0%,
+    #2b7bed 98%
+  );
+  --van-button-primary-border-color: linear-gradient(
+    270deg,
+    #56b2f7 0%,
+    #2b7bed 98%
+  );
+  --van-nav-bar-height: 70px;
+}
+
+.http-loading {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+}
+
+.http-loading .van-toast__loading {
+  color: rgb(25, 137, 250);
+}
